@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.0.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+    <link href="bootstrap.css" rel="stylesheet" />
+    <title></title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+
+        .page1 {
+            background: url(assets/photo-1459666644539-a9755287d6b0.png) no-repeat;
+            height: 850px;
+        }
+
+        .page2 {
+            background: url(assets/peak2.png) no-repeat;
+            height: 907px;
+        }
+
+        .page3 {
+            background: url(assets/photo-1417021423914-070979c8eb34_new.png) no-repeat;
+            height: 650px;
+        }
+
+        .links {
+            text-decoration: underline !important;
+            color: #fefeff !important;
+            font-weight: bold !important;
+            cursor: pointer;
+        }
+
+        .footerlinks {
+            text-decoration: underline !important;
+            color: #414f6b !important;
+            font-weight: bold !important;
+            cursor: pointer;
+        }
+
+        .logo {
+            /* left: 343px;
+            top: 8px;
+            position: absolute;*/
+            width: 43px;
+            height: 43px;
+            z-index: 51;
+            cursor: pointer;
+            padding-left: 50px;
+        }
+        .logofooter {
+            width: 43px;
+            height: 43px;
+            z-index: 51;
+            cursor: pointer;          
+        }
+        .row {
+            margin: 0;
+        }
+
+        .lnkCol {
+            text-align: center;
+        }     
+        td{
+            padding:0 10px 0 10px;
+            border:none!important;
+        }
+        .nav-link:hover{
+            text-decoration:underline;
+        }
+        .navbar-nav > li > a
+        {
+            padding:0;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #b0b4be;
+        }        
+    </style>
+    <script>
+        //$(document).ready(function () {
+        //    $("#page2").hide()
+        //    $("#page3").hide()
+        //});
+
+        //function showHistory() {
+        //    $("#page1").hide()
+        //    $("#page2").show()
+        //    $("#page3").hide()
+        //}
+
+        //function showTeam() {
+        //    $("#page1").hide()
+        //    $("#page2").hide()
+        //    $("#page3").show()
+        //}
+
+        //function showHome() {
+        //    $("#page1").show()
+        //    $("#page2").hide()
+        //    $("#page3").hide()
+        //}   
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row" id="page1">
+            <div class="col-12" style="padding:0;">
+                <div class="row page1">
+                    <div class="col-2 logo" style="padding-top:5px;">
+                        <a href="#page1"><img src="assets/Logo.png" /></a>
+                    </div>
+                    <div class="col-8" style="text-align:center;">
+                        <div class="row" style="height:30%;">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12" style="padding:0;margin:10% 0 0 5%;">
+                                <h1  style="color: #4d4d4d;font-size: 6vw;">LOSANGELES</h1>
+                                <h1 style="color: #414f6b;font-size: 6vw;margin-top:-4%;">MOUNTAINS</h1>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="col-2 lnkCol">
+                        <a  href="#page2" class="links" id="hisLink" style="margin-right:30px;">01. History</a>
+                        <a  href="#page3" class="links" id="tmLink">02. Team</a>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-10 logo">
+                        <a href="#page1"><img src="assets/Logo.png" style="vertical-align:bottom;" /></a>
+                        <img src="assets/LOSANGELESMOUNTAINS_0.png" style="height:30px;" />
+                    </div>
+                    <div class="col-2 lnkCol" style="padding-top:10px;">
+                        <a  href="#page2" class="footerlinks" id="hisLink" style="margin-right:30px;">01. History</a>
+                        <a  href="#page3" class="footerlinks" id="tmLink">02. Team</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="row page2" id="page2" style="margin-top:5px;">
+                <div class="col-2" style="padding:0;">
+
+                </div>
+                <div class="col-8" style="padding-top:10%;">
+                    <span><img style="margin-top:-40px;" src="assets/01.png" /></span><span><img style="margin-left:-25px;" src="assets/HISTORY.png" /></span>
+                    <p style="padding:10px 0 0 60px;font-size:18px;">
+                        <span>
+                            Loren ipsum dolor sit amet, consectetur elit. Proin inante viverra, rutrum erat rutrum, consectetur mi. Porin at <br/>
+                            maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim <br/>
+                            Pallentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+                        </span>                        
+                    </p>
+                </div>
+                <div class="col-2" style="padding:0;">
+
+                </div>
+            <div class="col-12" style="padding:0;top:16%;">
+                <div id="mountainCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="margin:auto;">
+                        <li data-target="#mountainCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mountainCarousel" data-slide-to="1"></li>
+                        <li data-target="#mountainCarousel" data-slide-to="2"></li>
+                        <li data-target="#mountainCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="item active col-12" style="padding:40px;">
+                            <img class="img-fluid mx-auto d-block" src="assets/photo1458442310124dd.png" alt="Los Angeles Mountian">
+                        </div>
+                        <div class="item col-12" style="padding:40px;">
+                            <img class="img-fluid mx-auto d-block" src="assets/photo14439809957068d.png" alt="Los Angeles Mountian">
+                        </div>
+                        <div class="item col-12" style="padding:40px;">
+                            <img class="img-fluid mx-auto d-block" src="assets/photo1458442310124dd_0.png" alt="Los Angeles Mountian">
+                        </div>
+                        <div class="item col-12" style="padding:40px;">
+                            <img class="img-fluid mx-auto d-block" src="assets/photo14439809957068d_0.png" alt="Los Angeles Mountian">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#mountainCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mountainCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="page3">
+            <div class="row col-12" style="padding:20px 0 20px 0;">
+                <div class="col-2" style="padding:0;">
+
+                </div>
+                <div class="col-2">
+                    <span><img src="assets/02.png" /></span>
+                    <!--<span style="color: #414f6b; font-size: 2vw;font-weight:bolder;position:absolute;margin-top:55px;margin-left:-8%;"> CLIMB </span>-->
+                    <span><img style="margin-left:-25px;margin-bottom:-40px;" src="assets/CLIMB.png" /></span>
+
+                </div>
+                <div class="col-6" style="padding-top:60px;">
+                    <span style="font-size:18px;">
+                        Cras Scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendreritac,<br />
+                        tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+                    </span>
+                </div>               
+            </div> 
+            <div class="row col-12" style="background-color: #414f6b;font-weight:bold;font-size:16px;">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="margin:0;">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto container">
+                                <li class="nav-item">
+                                    <a s class="nav-link" href="#page2">MOUNTAIN1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page3">MOUNTAIN2</a>
+                                </li>
+                            </ul>                          
+                        </div>
+                    </nav>                
+                </div>                                
+            </div>
+            <div class="row page3 col-12">
+                <div class="" style="background-color:white;margin-top:5%;left:20%;height:auto;width:auto;padding:20px;position:absolute;">
+                    <img style="padding-left:10px;padding-bottom:5px;" src="assets/SCHEDULE.png"/>
+                    <table style="border: none; padding: 20px; width: 100%" class="table">
+                        <tr style="border:none;">
+                            <td>25 Nov 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr style="border:none;">
+                            <td>28 Nov 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td>18 Dec 2016</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                        <tr style="border:none;">
+                            <td>07 Jan 2017</td>
+                            <td>Vestibulum viverra</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row col-12" style="background-color: #414f6b;">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-4" style="padding:0;">                 
+                    <div class="row" style="color: #63769d;font-weight:bolder;">
+                        <div>
+                            <a href="#page1"><img class="logofooter" src="assets/Logo.png" /></a>
+                        </div>
+                        <div style="margin-left:5px;">
+                            <span>LOSANGELES</span><br/>
+                            <span>MOUNTAINS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-6" style="text-align: center; font-weight: bold; font-size: 12px; color: #63769d; margin:auto;">   
+                    <span>COPYRIGHT 2016. ALL RIGHT RESERVED</span>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
